@@ -14,6 +14,9 @@
 		1F7EB3E7297C5FB200FDA28A /* FirstBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB3E6297C5FB200FDA28A /* FirstBlogTests.swift */; };
 		1F7EB3F1297C5FB200FDA28A /* FirstBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB3F0297C5FB200FDA28A /* FirstBlogUITests.swift */; };
 		1F7EB3F3297C5FB200FDA28A /* FirstBlogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB3F2297C5FB200FDA28A /* FirstBlogUITestsLaunchTests.swift */; };
+		1F7EB400297C602D00FDA28A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB3FF297C602D00FDA28A /* MainView.swift */; };
+		1F7EB404297C636100FDA28A /* BlogPostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB403297C636100FDA28A /* BlogPostsList.swift */; };
+		1F7EB406297C656F00FDA28A /* BlogCardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EB405297C656F00FDA28A /* BlogCardMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		1F7EB3EC297C5FB200FDA28A /* FirstBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7EB3F0297C5FB200FDA28A /* FirstBlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBlogUITests.swift; sourceTree = "<group>"; };
 		1F7EB3F2297C5FB200FDA28A /* FirstBlogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBlogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F7EB3FF297C602D00FDA28A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1F7EB403297C636100FDA28A /* BlogPostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostsList.swift; sourceTree = "<group>"; };
+		1F7EB405297C656F00FDA28A /* BlogCardMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCardMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				1F7EB3D7297C5FB100FDA28A /* ContentView.swift */,
 				1F7EB3D9297C5FB200FDA28A /* Assets.xcassets */,
 				1F7EB3DB297C5FB200FDA28A /* Preview Content */,
+				1F7EB3FF297C602D00FDA28A /* MainView.swift */,
+				1F7EB403297C636100FDA28A /* BlogPostsList.swift */,
+				1F7EB405297C656F00FDA28A /* BlogCardMain.swift */,
 			);
 			path = FirstBlog;
 			sourceTree = "<group>";
@@ -258,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7EB3D8297C5FB100FDA28A /* ContentView.swift in Sources */,
+				1F7EB400297C602D00FDA28A /* MainView.swift in Sources */,
 				1F7EB3D6297C5FB100FDA28A /* FirstBlogApp.swift in Sources */,
+				1F7EB404297C636100FDA28A /* BlogPostsList.swift in Sources */,
+				1F7EB406297C656F00FDA28A /* BlogCardMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
