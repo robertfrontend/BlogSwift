@@ -17,9 +17,11 @@ struct MainView: View {
                             .font(.title.bold())
                         Spacer()
                     }
-                    LazyVStack {ForEach(featuredposts) { post in
+                    LazyVStack {ForEach(featuredpost) { post in
+                            NavigationLink(destination: BlogPostView(blogPost: post)) {
                                 BlogCardMain(blogPost: post)
-                                .padding(2)
+                            }
+                            .foregroundColor(.black)
                         }
                     
                     }
@@ -37,10 +39,25 @@ struct MainView: View {
                     .padding(.horizontal, 15)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
+                        
                         LazyHStack(spacing: 15) {
-                            ForEach(latestpost) {post in
-                                BlogCardMain(blogPost: post)
+                            if latestpost.count >= 3 {
+                                ForEach(latestpost[0...2]) {post in
+                                    NavigationLink(destination: BlogPostView(blogPost: post)) {
+                                        BlogCardMain(blogPost: post)
+                                    }
+                                    .foregroundColor(.black)
+                                }
+                            }else {
+                                ForEach(latestpost[0..<latestpost.count]) {post in
+                                    NavigationLink(destination: BlogPostView(blogPost: post)) {
+                                        BlogCardMain(blogPost: post)
+                                    }
+                                    .foregroundColor(.black)
+                                }
                             }
+
+                 
                         }
                         .padding(.leading, 15)
                         .padding(.trailing, 30)
@@ -55,7 +72,7 @@ struct MainView: View {
             .navigationTitle("Home")
             .navigationBarItems(
                 trailing: Button(action: {})
-                { 
+                {
                     Image(systemName: "arrow.counterclockwise.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)

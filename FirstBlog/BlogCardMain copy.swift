@@ -18,7 +18,7 @@ struct BlogCardMain: View {
                     .aspectRatio(contentMode: .fill)
                     .padding(.vertical, 20.0)
                     .frame(height: 220)
-                    .frame(maxWidth: UIScreen.main.bounds.width - 60)
+                    .frame(maxWidth: UIScreen.main.bounds.width - 80)
                     .clipped()
                     .clipShape(
                         RoundedRectangle(cornerRadius: 20,
@@ -41,7 +41,7 @@ struct BlogCardMain: View {
  
         }
         .padding(10)
-        .frame(maxWidth: UIScreen.main.bounds.width - 60, alignment: .leading)
+        .frame(width: 350)
         .background(.white)
         .cornerRadius(20)
         .shadow(color: .black.opacity(0.1), radius: 15, x: 0, y: 5)

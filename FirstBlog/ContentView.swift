@@ -15,6 +15,11 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                         Text("Home")
                 }
+            AllPosts()
+                .tabItem{
+                    Image(systemName: "list.dash")
+                        Text("Se all")
+                }
         }
     }
 }
